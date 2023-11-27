@@ -1,0 +1,30 @@
+{
+  "name": "home-page",
+  "version": "1.0.0",
+  "description": "home page of hira",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect ./src/index.js",
+    "test": "test",
+    "watch": "node-sass ./src/resources/scss/ -o ./src/public/css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiraDuong/HomePage.git"
+  },
+  "author": "Vu Huy Hoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HiraDuong/HomePage/issues"
+  },
+  "homepage": "https://github.com/HiraDuong/HomePage#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}

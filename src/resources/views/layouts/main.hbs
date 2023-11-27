@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    
+    <div class="layout">
+      <div class="image">
+        <img class="image-child" alt="" src="./public/rectangle-1@2x.png" />
+      </div>
+      <div class="sidebar">
+        <div class="sidebar1"></div>
+        <img
+          class="home-icon"
+          alt=""
+          src="./public/home@2x.png"
+          id="homeImage"
+        />
+
+        <img
+          class="contact-icon"
+          alt=""
+          src="./public/contact@2x.png"
+          id="contactImage"
+        />
+
+        <img
+          class="skill-icon"
+          alt=""
+          src="./public/skill@2x.png"
+          id="skillImage"
+        />
+
+        <img
+          class="aboutme-icon"
+          alt=""
+          src="./public/aboutme@2x.png"
+          id="aboutMeImage"
+        />
+
+        <img
+          class="service-icon"
+          alt=""
+          src="./public/service@2x.png"
+          id="serviceImage"
+        />
+
+        <img
+          class="project-icon"
+          alt=""
+          src="./public/project@2x.png"
+          id="projectImage"
+        />
+      </div>
+      <div class="main">
+        <div class="background">
+          {{> header}}
+          {{{body}}}
+          {{> footer}}
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeImage = document.getElementById("homeImage");
+      if (homeImage) {
+        homeImage.addEventListener("click", function (e) {
+          window.location.href = "layout.html";
+        });
+      }
+      
+      var contactImage = document.getElementById("contactImage");
+      if (contactImage) {
+        contactImage.addEventListener("click", function (e) {
+          // Please sync "Contact" to the project
+        });
+      }
+      
+      var skillImage = document.getElementById("skillImage");
+      if (skillImage) {
+        skillImage.addEventListener("click", function (e) {
+          // Please sync "Skill" to the project
+        });
+      }
+      
+      var aboutMeImage = document.getElementById("aboutMeImage");
+      if (aboutMeImage) {
+        aboutMeImage.addEventListener("click", function (e) {
+          // Please sync "About Me" to the project
+        });
+      }
+      
+      var serviceImage = document.getElementById("serviceImage");
+      if (serviceImage) {
+        serviceImage.addEventListener("click", function (e) {
+          // Please sync "Survice" to the project
+        });
+      }
+      
+      var projectImage = document.getElementById("projectImage");
+      if (projectImage) {
+        projectImage.addEventListener("click", function (e) {
+          // Please sync "Project" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -18,5 +18,6 @@ console.log(path.join(__dirname,"resources/views"))
 
 
 app.get('/',(req,res)=>res.render('home'))
+app.get('/aboutme',(req,res)=>res.render('aboutme'))
 
 app.listen(port,()=> console.log(`Server đang lắng nghe tại http://localhost:${port}`))

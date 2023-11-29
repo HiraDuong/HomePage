@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --inspect ./src/index.js",
     "test": "test",
-    "watch": "node-sass ./src/resources/scss/ -o ./src/public/css/app.css"
+    "watch": "node-sass --watch src/resources/scss -o src/public/css/"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/HiraDuong/HomePage#readme",
   "dependencies": {
+    "css.gg": "^2.1.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2"
   },
